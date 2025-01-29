@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #6c7d8b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 18px;
+}
+
+.hero {
+    background-color: #ecf5f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    padding: 15px 30px;
+    background-color: #f27c3b;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero .falling-fruits {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.falling-fruit {
+    position: absolute;
+    max-width: 60px;
+    animation: fruit-fall 4s ease-in-out infinite;
+}
+
+@keyframes fruit-fall {
+    0% {
+        top: -100px;
+        left: 20%;
+        opacity: 1;
+    }
+    50% {
+        top: 60%;
+        left: 30%;
+        opacity: 0.5;
+    }
+    100% {
+        top: 100%;
+        left: 20%;
+        opacity: 0;
+    }
+}
+
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.products h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about {
+    padding: 40px;
+    background-color: #eff2f4;
+    text-align: center;
+}
+
+footer {
+    background-color: #6c7d8b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
